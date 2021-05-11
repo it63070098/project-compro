@@ -1,0 +1,170 @@
+#include <stdio.h>
+/*#include <conio.h>*/
+int main(){
+    char name[30], lastname[30], number[10], sl, pro, repro;
+    int user, mic[4] ={600,25000,1000,500},ans;
+    int day,mon,year,date;
+    int fee=1000;
+    int *doc001, *doc002, *doc003, *doc004;
+    doc001 = &fee;
+    doc002 = &fee;
+    doc003 = &fee;
+    doc004 = &fee;
+    printf("________Program to make a dentist appointment_____\n\n");
+    printf("\t    ---------------------\n");
+    printf("\t\tTreatment options\n");
+    printf("\t    ---------------------\n");
+    printf("\t\tTooth extration Enter 001\n", mic[0]);
+    printf("\t\tOrthodontic     Enter 002\n", mic[1]);
+    printf("\t\tFillings        Enter 003\n", mic[1]);
+    printf("\t\tTeeth cleanig   Enter 004\n",mic[3]);
+    printf("\t\tExit program    Enter 005\n");
+    printf("\t\tChoose treatment: ");
+    scanf("%d", &user);
+    printf("\t    ---------------------\n");
+    printf("\n");
+    printf("\n");
+    switch(user){
+        case 001:
+            printf("\tEnter your name: ");
+            scanf("%s", &name);
+            printf("\tlastname: ");
+            scanf("%s", &lastname);
+            printf("\tEnter your phonenumber: ");
+            scanf("%s",&number);
+            printf("\tFill in date today[d/m/y]: ");
+            scanf("%d %c %d %c %d",&day, &sl, &mon, &sl, &year);
+            printf("\n");
+            printf("\t   ***************************\n");
+            printf("\t\t Appoint a doctor\n");
+            printf("\t   ***************************\n");
+            date = day+5;
+            if(day == 26,27,28,29,30,31 && mon == 12){
+                printf("\t\tappointment day: %d/1/%d\n",day%25,year+1);
+            }else{
+                printf("\t\tappointment day: %d/%d/%d\n",date,mon,year);
+            }
+            printf("\t\tYour Name: %s %s\n",name,lastname);
+            printf("\t\tDoctor: Dr.swiss D.JR\n");
+            printf("\t\tTreat: Tooth extraction\n");
+            printf("\t\tDoctor's fee: %d bath\n", *doc001);
+            printf("\t\tTreatment fee: %d bath\n", mic[0]);
+            ans = mic[0] + *doc001;
+            printf("\t\tPrice to pay: %d bath\n",ans);
+            printf("\t   ***************************\n");
+            break;
+        case 002:
+                printf("\tEnter your name: ");
+                scanf("%s", &name);
+                printf("\tlastname: ");
+                scanf("%s", &lastname);
+                printf("\tEnter your phonenumber: ");
+                scanf("%s",&number);
+                printf("\tFill in date today[d/m/y]: ");
+                scanf("%d %c %d %c %d",&day, &sl, &mon, &sl, &year);
+                printf("\n");
+                printf("\t   ***************************\n");
+                printf("\t\t Appoint a doctor\n");
+                printf("\t   ***************************\n");
+                date = day+5;
+            if(day == 26,27,28,29,30,31 && mon == 12){
+                printf("\t\tappointment day: %d/1/%d\n",day%25,year+1);
+            }else{
+                printf("\t\tappointment day: %d/%d/%d\n",date,mon,year);
+            }
+            printf("\t\tYour Name: %s %s\n",name,lastname);
+            printf("\t\tDoctor: Dr.swiss D.JR\n");
+            printf("\t\tTreat: Tooth extraction\n");
+            printf("\t\tDoctor's fee: %d bath\n", *doc002);
+            printf("\t\tTreatment fee: %d bath\n", mic[1]);
+            ans = mic[1] + *doc002;
+            printf("\t\tPrice to pay: %d bath\n",ans);
+            printf("\t   ***************************\n");
+            break;
+        case 003:
+                printf("\tEnter your name: ");
+                scanf("%s", &name);
+                printf("\tlastname: ");
+                scanf("%s", &lastname);
+                printf("\tEnter your phonenumber: ");
+                scanf("%s",&number);
+                printf("\tFill in date today[d/m/y]: ");
+                scanf("%d %c %d %c %d",&day, &sl, &mon, &sl, &year);
+                printf("\n");
+                printf("\t   ***************************\n");
+                printf("\t\t Appoint a doctor\n");
+                printf("\t   ***************************\n");
+                date = day+5;
+            if(day == 26,27,28,29,30,31 && mon == 12){
+                printf("\t\tappointment day: %d/1/%d\n",day%25,year+1);
+            }else{
+                printf("\t\tappointment day: %d/%d/%d\n",date,mon,year);
+            }
+            printf("\t\tYour Name: %s %s\n",name,lastname);
+            printf("\t\tDoctor: Dr.swiss D.JR\n");
+            printf("\t\tTreat: Tooth extraction\n");
+            printf("\t\tDoctor's fee: %d bath\n", *doc003);
+            printf("\t\tTreatment fee: %d bath\n", mic[2]);
+            ans = mic[2] + *doc003;
+            printf("\t\tPrice to pay: %d bath\n",ans);
+            printf("\t   ***************************\n");
+            break;
+        case 004:
+                printf("\tEnter your name: ");
+                scanf("%s", &name);
+                printf("\tlastname: ");
+                scanf("%s", &lastname);
+                printf("\tEnter your phonenumber: ");
+                scanf("%s",&number);
+                printf("\tFill in date today[d/m/y]: ");
+                scanf("%d %c %d %c %d",&day, &sl, &mon, &sl, &year);
+                printf("\n");
+                printf("\t   ***************************\n");
+                printf("\t\t Appoint a doctor\n");
+                printf("\t   ***************************\n");
+                date = day+5;
+            if(day == 26,27,28,29,30,31 && mon == 12){
+                printf("\t\tappointment day: %d/1/%d\n",day%25,year+1);
+            }else{
+                printf("\t\tappointment day: %d/%d/%d\n",date,mon,year);
+            }
+            printf("\t\tYour Name: %s %s\n",name,lastname);
+            printf("\t\tDoctor: Dr.swiss D.JR\n");
+            printf("\t\tTreat: Tooth extraction\n");
+            printf("\t\tDoctor's fee: %d bath\n", *doc004);
+            printf("\t\tTreatment fee: %d bath\n", mic[3]);
+            ans = mic[3] + *doc004;
+            printf("\t\tPrice to pay: %d bath\n",ans);
+            printf("\t   ***************************\n");
+            break;
+        case 005:
+            printf("Need to restart the program? Enter yes/no enter y/n: ");
+            scanf("%s", &repro);
+            if (repro== 'y'){
+                printf("\n");
+                main();
+            }else{
+                printf("Exit the program successfully");
+                return 0;
+            }
+        default :
+                printf("Error");
+    }
+    printf("\n");
+    printf("_______________________________________\n\n");
+    printf("Need to restart the program? Enter yes/no enter y/n: ");
+    scanf("%s", &pro);
+    printf("_______________________________________");
+        if(pro=='y'){
+            printf("\n");
+            printf("\n");
+            main();
+        }else{
+            printf("\n");
+            printf("\n");
+            printf("Exit the program successfully");
+            return 0;
+        }
+    /*getch();*/
+}
+
