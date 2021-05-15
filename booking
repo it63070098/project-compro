@@ -1,0 +1,154 @@
+#include <stdio.h>
+/*#include <conio.h>*/
+int main(){
+    /*textcolor(9,0);*/
+    char name[30], lastname[30], number[10], dot, sl, restart;
+    int user, mic[4] ={50,50,200,100};
+    int day,mon,year,date,hour,hour2,zero,hour3;
+    printf("\n");
+    printf("\n");
+    printf("\t\t_________ KMITL SPORT CLUB __________\n\n");
+    printf("\t\t-------------------------------------\n");
+    printf("\t\t\tSport facilities booking\n");
+    printf("\t\t-------------------------------------\n");
+    printf("\n\t\t  Badminton court     Enter 001\n", mic[0]);
+    printf("\t\t  Table tennis court  Enter 002\n", mic[1]);
+    printf("\t\t  Football field      Enter 003\n", mic[2]);
+    printf("\t\t  Tennis court        Enter 004\n",mic[3]);
+    printf("\t\t  Exit program        Enter 005\n\n");
+    printf("\t\t  Choose a sport facilities: ");
+    scanf("%d", &user);
+    printf("\n\t\t-------------------------------------\n");
+    printf("\n");
+    printf("\n");
+    switch(user){
+        case 001:
+            printf("\t\t  Enter your name: ");
+            scanf("%s", &name);
+            printf("\t\t  lastname: ");
+            scanf("%s", &lastname);
+            printf("\t\t  Enter your phone number: ");
+            scanf("%s",&number);
+            printf("\t\t  Fill in date [d/m/y]: ");
+            scanf("%d %c %d %c %d",&day, &sl, &mon, &sl, &year);
+            printf("\t\t  Appointment length[09.00-18.00]: "); /*เพิ่มทีละ1ชม.เท่านั้น*/
+            scanf("%d %c %d %c %d %c %d",&hour, &dot, &zero, &dot, &hour2, &dot, &zero);
+            printf("\n");
+            printf("\n");
+            printf("\n");
+            printf("\t\t*************************************\n");
+            printf("\t\t\t   KMITL SPORT CLUB\n");
+            printf("\t\t*************************************\n");
+            hour3 = hour2-hour;
+            printf("\t\t\tappointment day: %d/%d/%d\n",day,mon,year);         
+            printf("\t\t\tYour Name: %s %s\n",name,lastname);
+            printf("\n\t\t\tBadminton court\n");
+            printf("\t\t\t   %d hours[%d.00-%d.00]\n", hour3,hour, hour2);
+            printf("\n\n\t\t\tservice charge: %d bath\n", mic[0]*hour3);
+            printf("\n\t\t*************************************\n");
+            break;
+        case 002:
+            printf("\t\t  Enter your name: ");
+            scanf("%s", &name);
+            printf("\t\t  lastname: ");
+            scanf("%s", &lastname);
+            printf("\t\t  Enter your phone number: ");
+            scanf("%s",&number);
+            printf("\t\t  Fill in date [d/m/y]: ");
+            scanf("%d %c %d %c %d",&day, &sl, &mon, &sl, &year);
+            printf("\t\t  Appointment length[09.00-18.00]: "); /*เพิ่มทีละ1ชม.เท่านั้น*/
+            scanf("%d %c %d %c %d %c %d",&hour, &dot, &zero, &dot, &hour2, &dot, &zero);
+            printf("\n");
+            printf("\n");
+            printf("\n");
+            printf("\t\t*************************************\n");
+            printf("\t\t\t   KMITL SPORT CLUB\n");
+            printf("\t\t*************************************\n");
+            hour3 = hour2-hour;
+            printf("\t\t\tappointment day: %d/%d/%d\n",day,mon,year);         
+            printf("\t\t\tYour Name: %s %s\n",name,lastname);
+            printf("\n\t\t\tTable tennis court\n");
+            printf("\t\t\t   %d hours[%d.00-%d.00]\n", hour3,hour, hour2);
+            printf("\n\n\t\t\tservice charge: %d bath\n", mic[1]*hour3);
+            printf("\n\t\t*************************************\n");
+            break;
+        case 003:
+            printf("\t\t  Enter your name: ");
+            scanf("%s", &name);
+            printf("\t\t  lastname: ");
+            scanf("%s", &lastname);
+            printf("\t\t  Enter your phone number: ");
+            scanf("%s",&number);
+            printf("\t\t  Fill in date [d/m/y]: ");
+            scanf("%d %c %d %c %d",&day, &sl, &mon, &sl, &year);
+            printf("\t\t  Appointment length[09.00-18.00]: "); /*เพิ่มทีละ1ชม.เท่านั้น*/
+            scanf("%d %c %d %c %d %c %d",&hour, &dot, &zero, &dot, &hour2, &dot, &zero);
+            printf("\n");
+            printf("\n");
+            printf("\n");
+            printf("\t\t*************************************\n");
+            printf("\t\t\t   KMITL SPORT CLUB\n");
+            printf("\t\t*************************************\n");
+            hour3 = hour2-hour;
+            printf("\t\t\tappointment day: %d/%d/%d\n",day,mon,year);         
+            printf("\t\t\tYour Name: %s %s\n",name,lastname);
+            printf("\n\t\t\tFootball field\n");
+            printf("\t\t\t   %d hours[%d.00-%d.00]\n", hour3,hour, hour2);
+            printf("\n\n\t\t\tservice charge: %d bath\n", mic[2]*hour3);
+            printf("\n\t\t*************************************\n");
+            break;
+        case 004:
+            printf("\t\t  Enter your name: ");
+            scanf("%s", &name);
+            printf("\t\t  lastname: ");
+            scanf("%s", &lastname);
+            printf("\t\t  Enter your phone number: ");
+            scanf("%s",&number);
+            printf("\t\t  Fill in date [d/m/y]: ");
+            scanf("%d %c %d %c %d",&day, &sl, &mon, &sl, &year);
+            printf("\t\t  Appointment length[09.00-18.00]: "); /*เพิ่มทีละ1ชม.เท่านั้น*/
+            scanf("%d %c %d %c %d %c %d",&hour, &dot, &zero, &dot, &hour2, &dot, &zero);
+            printf("\n");
+            printf("\n");
+            printf("\n");
+            printf("\t\t*************************************\n");
+            printf("\t\t\t   KMITL SPORT CLUB\n");
+            printf("\t\t*************************************\n");
+            hour3 = hour2-hour;
+            printf("\t\t\tappointment day: %d/%d/%d\n",day,mon,year);         
+            printf("\t\t\tYour Name: %s %s\n",name,lastname);
+            printf("\n\t\t\tTennis court\n");
+            printf("\t\t\t   %d hours[%d.00-%d.00]\n", hour3,hour, hour2);
+            printf("\n\n\t\t\tservice charge: %d bath\n", mic[3]*hour3);
+            printf("\n\t\t*************************************\n");
+            break;
+        case 005:
+            printf("\t\tDo you want to exit program? Enter y/n : ");
+            scanf("%s", &restart);
+            if (restart == 'n'){
+                printf("\n");
+                main();
+            }else{
+                printf("\n---------------------Exit the program successfully-----------------");
+                return 0;
+            }
+        default :
+                printf("Error");
+    }
+    printf("\n");
+    printf("\t\tDo you want to restart the program? Enter y/n : ");
+    scanf("%s", &restart);
+    printf("__________________________________________________________");
+        if(restart== 'y'){
+            printf("\n");
+            printf("\n");
+            main();
+        }else{
+            printf("\n");
+            printf("\n");
+            printf("\n---------------------Exit the program successfully-----------------");
+            return 0;
+        }
+    /*getch();*/
+}
+
