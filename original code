@@ -16,7 +16,7 @@ int main(){
     printf("\t    ---------------------\n");
     printf("\t\tTooth extration Enter 001\n", mic[0]);
     printf("\t\tOrthodontic     Enter 002\n", mic[1]);
-    printf("\t\tFillings        Enter 003\n", mic[1]);
+    printf("\t\tFillings        Enter 003\n", mic[2]);
     printf("\t\tTeeth cleanig   Enter 004\n",mic[3]);
     printf("\t\tExit program    Enter 005\n");
     printf("\t\tChoose treatment: ");
