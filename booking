@@ -1,6 +1,5 @@
 #include <stdio.h>
 int main(){
-    /*textcolor(9,0);*/
     char name[30], lastname[30], number[10], dot, sl, restart;
     int choose, fee[4] ={50,50,200,100};
     int day,mon,year,date,hour,hour2,zero,hour3;
