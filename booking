@@ -1,5 +1,4 @@
 #include <stdio.h>
-/*#include <conio.h>*/
 int main(){
     /*textcolor(9,0);*/
     char name[30], lastname[30], number[10], dot, sl, restart;
@@ -149,6 +148,5 @@ int main(){
             printf("\n---------------------Exit the program successfully---------------------");
             return 0;
         }
-    /*getch();*/
 }
 
