@@ -9,10 +9,10 @@ int main(){
     printf("\t\t------------------------------------------\n");
     printf("\t\t\tSport facilities booking\n");
     printf("\t\t------------------------------------------\n");
-    printf("\n\t\t  Badminton court[50b/1hr]     Enter 001\n", fee[0]);
-    printf("\t\t  Table tennis court[50b/1hr]  Enter 002\n", fee[1]);
-    printf("\t\t  Football field[200b/1hr]     Enter 003\n", fee[2]);
-    printf("\t\t  Tennis court[100b/1hr]       Enter 004\n",fee[3]);
+    printf("\n\t\t  Badminton court[50b/1hr]     Enter 001\n");
+    printf("\t\t  Table tennis court[50b/1hr]  Enter 002\n");
+    printf("\t\t  Football field[200b/1hr]     Enter 003\n");
+    printf("\t\t  Tennis court[100b/1hr]       Enter 004\n");
     printf("\t\t  Exit program                 Enter 005\n\n");
     printf("\t\t  Choose a sport facilities: ");
     scanf("%d", &choose);
