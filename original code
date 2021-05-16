@@ -1,5 +1,6 @@
+/*credit https://www.youtube.com/watch?v=b1nReHmw5WY */
 #include <stdio.h>
-/*#include <conio.h>*/
+#include <conio.h>
 int main(){
     char name[30], lastname[30], number[10], sl, pro, repro;
     int user, mic[4] ={600,25000,1000,500},ans;
@@ -165,6 +166,6 @@ int main(){
             printf("Exit the program successfully");
             return 0;
         }
-    /*getch();*/
+    getch();
 }
 
