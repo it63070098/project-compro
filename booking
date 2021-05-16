@@ -1,8 +1,8 @@
 #include <stdio.h>
 int main(){
-    char name[30], lastname[30], number[10], dot, sl, restart;
+    char name[30], lastname[30], number[10], restart;
     int choose, fee[4] ={50,50,200,100};
-    int day,mon,year,date,hour,hour2,zero,hour3;
+    int day,mon,year,hour,hour2,zero,hour3;
     printf("\n");
     printf("\n");
     printf("\t\t___________  KMITL SPORT CLUB  ___________\n\n");
@@ -28,9 +28,9 @@ int main(){
             printf("\t\t  Enter your phone number: ");
             scanf("%s",&number);
             printf("\t\t  Fill in date [d/m/y]: ");
-            scanf("%d %c %d %c %d",&day, &sl, &mon, &sl, &year);
+            scanf("%d/%d/%d",&day, &mon, &year);
             printf("\t\t  Appointment length[09.00-18.00]: "); /*เพิ่มทีละ1ชม.เท่านั้น*/
-            scanf("%d %c %d %c %d %c %d",&hour, &dot, &zero, &dot, &hour2, &dot, &zero);
+            scanf("%d.%d-%d.%d",&hour, &zero, &hour2, &zero);
             printf("\n");
             printf("\n");
             printf("\n");
@@ -41,7 +41,7 @@ int main(){
             printf("\t\t\tappointment day: %d/%d/%d\n",day,mon,year);         
             printf("\t\t\tYour Name: %s %s\n", name, lastname);
             printf("\n\t\t\tBadminton court\n");
-            printf("\t\t\t   %d hours[%d.00-%d.00]\n", hour3,hour, hour2);
+            printf("\t\t\t%d hours[%d.00-%d.00]\n", hour3,hour,hour2);
             printf("\n\n\t\t\tservice charge: %d bath\n", fee[0]*hour3);
             printf("\n\t\t*************************************\n");
             break;
@@ -53,9 +53,9 @@ int main(){
             printf("\t\t  Enter your phone number: ");
             scanf("%s",&number);
             printf("\t\t  Fill in date [d/m/y]: ");
-            scanf("%d %c %d %c %d",&day, &sl, &mon, &sl, &year);
+            scanf("%d/%d/%d",&day, &mon, &year);
             printf("\t\t  Appointment length[09.00-18.00]: "); /*เพิ่มทีละ1ชม.เท่านั้น*/
-            scanf("%d %c %d %c %d %c %d",&hour, &dot, &zero, &dot, &hour2, &dot, &zero);
+            scanf("%d.%d-%d.%d",&hour, &zero, &hour2, &zero);
             printf("\n");
             printf("\n");
             printf("\n");
@@ -66,7 +66,7 @@ int main(){
             printf("\t\t\tappointment day: %d/%d/%d\n",day,mon,year);         
             printf("\t\t\tYour Name: %s %s\n",name,lastname);
             printf("\n\t\t\tTable tennis court\n");
-            printf("\t\t\t   %d hours[%d.00-%d.00]\n", hour3,hour, hour2);
+            printf("\t\t\t%d hours[%d.00-%d.00]\n", hour3,hour,hour2);
             printf("\n\n\t\t\tservice charge: %d bath\n", fee[1]*hour3);
             printf("\n\t\t*************************************\n");
             break;
@@ -78,9 +78,9 @@ int main(){
             printf("\t\t  Enter your phone number: ");
             scanf("%s",&number);
             printf("\t\t  Fill in date [d/m/y]: ");
-            scanf("%d %c %d %c %d",&day, &sl, &mon, &sl, &year);
+            scanf("%d/%d/%d",&day, &mon, &year);
             printf("\t\t  Appointment length[09.00-18.00]: "); /*เพิ่มทีละ1ชม.เท่านั้น*/
-            scanf("%d %c %d %c %d %c %d",&hour, &dot, &zero, &dot, &hour2, &dot, &zero);
+            scanf("%d.%d-%d.%d",&hour, &zero, &hour2, &zero);
             printf("\n");
             printf("\n");
             printf("\n");
@@ -91,7 +91,7 @@ int main(){
             printf("\t\t\tappointment day: %d/%d/%d\n",day,mon,year);         
             printf("\t\t\tYour Name: %s %s\n",name,lastname);
             printf("\n\t\t\tFootball field\n");
-            printf("\t\t\t   %d hours[%d.00-%d.00]\n", hour3,hour, hour2);
+            printf("\t\t\t%d hours[%d.00-%d.00]\n", hour3,hour, hour2);
             printf("\n\n\t\t\tservice charge: %d bath\n", fee[2]*hour3);
             printf("\n\t\t*************************************\n");
             break;
@@ -103,9 +103,9 @@ int main(){
             printf("\t\t  Enter your phone number: ");
             scanf("%s",&number);
             printf("\t\t  Fill in date [d/m/y]: ");
-            scanf("%d %c %d %c %d",&day, &sl, &mon, &sl, &year);
+            scanf("%d/%d/%d",&day, &mon, &year);
             printf("\t\t  Appointment length[09.00-18.00]: "); /*เพิ่มทีละ1ชม.เท่านั้น*/
-            scanf("%d %c %d %c %d %c %d",&hour, &dot, &zero, &dot, &hour2, &dot, &zero);
+            scanf("%d.%d-%d.%d",&hour, &zero, &hour2, &zero);
             printf("\n");
             printf("\n");
             printf("\n");
@@ -116,7 +116,7 @@ int main(){
             printf("\t\t\tappointment day: %d/%d/%d\n",day,mon,year);         
             printf("\t\t\tYour Name: %s %s\n",name,lastname);
             printf("\n\t\t\tTennis court\n");
-            printf("\t\t\t   %d hours[%d.00-%d.00]\n", hour3,hour, hour2);
+            printf("\t\t\t%d hours[%d.00-%d.00]\n", hour3,hour, hour2);
             printf("\n\n\t\t\tservice charge: %d bath\n", fee[3]*hour3);
             printf("\n\t\t*************************************\n");
             break;
@@ -148,4 +148,3 @@ int main(){
             return 0;
         }
 }
-
