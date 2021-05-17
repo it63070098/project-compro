@@ -29,7 +29,7 @@ int main(){
             scanf("%s",&number);
             printf("\t\t  Fill in date [d/m/y]: ");
             scanf("%d/%d/%d",&day, &mon, &year);
-            printf("\t\t  Appointment length[09.00-18.00]: "); /*เพิ่มทีละ1ชม.เท่านั้น*/
+            printf("\t\t  Appointment length[09.00-18.00]: "); /*เพิ่มขึินทีละ1ชม.เท่านั้น*/
             scanf("%d.%d-%d.%d",&hour, &zero, &hour2, &zero);
             printf("\n");
             printf("\n");
@@ -54,7 +54,7 @@ int main(){
             scanf("%s",&number);
             printf("\t\t  Fill in date [d/m/y]: ");
             scanf("%d/%d/%d",&day, &mon, &year);
-            printf("\t\t  Appointment length[09.00-18.00]: "); /*เพิ่มทีละ1ชม.เท่านั้น*/
+            printf("\t\t  Appointment length[09.00-18.00]: "); /*เพิ่มขึ้นทีละ1ชม.เท่านั้น*/
             scanf("%d.%d-%d.%d",&hour, &zero, &hour2, &zero);
             printf("\n");
             printf("\n");
@@ -79,7 +79,7 @@ int main(){
             scanf("%s",&number);
             printf("\t\t  Fill in date [d/m/y]: ");
             scanf("%d/%d/%d",&day, &mon, &year);
-            printf("\t\t  Appointment length[09.00-18.00]: "); /*เพิ่มทีละ1ชม.เท่านั้น*/
+            printf("\t\t  Appointment length[09.00-18.00]: "); /*เพิ่มขึ้นทีละ1ชม.เท่านั้น*/
             scanf("%d.%d-%d.%d",&hour, &zero, &hour2, &zero);
             printf("\n");
             printf("\n");
@@ -104,7 +104,7 @@ int main(){
             scanf("%s",&number);
             printf("\t\t  Fill in date [d/m/y]: ");
             scanf("%d/%d/%d",&day, &mon, &year);
-            printf("\t\t  Appointment length[09.00-18.00]: "); /*เพิ่มทีละ1ชม.เท่านั้น*/
+            printf("\t\t  Appointment length[09.00-18.00]: "); /*เพิ่มขึ้นทีละ1ชม.เท่านั้น*/
             scanf("%d.%d-%d.%d",&hour, &zero, &hour2, &zero);
             printf("\n");
             printf("\n");
